@@ -6,25 +6,17 @@
   <title>About Us - Keep It Cool</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
   <style>
-    /* Final Styles with Purple Background */
+    /* Final Styles for Full-Width Design */
+    :root {
+      --background-color: #483D8B; /* New Darker Purple */
+    }
     body {
-      background-color: #5a4fcf; /* This is our new purple background */
+      color: var(--pico-color, #d9d9d9);
     }
-    header, main, footer {
-      background-color: rgba(23, 27, 31, 0.85);
-      border: 1px solid var(--muted-border-color);
-      border-radius: 8px;
-      padding: 1rem 2rem;
-      margin-bottom: 1rem;
-    }
-    header {
-      text-align: center;
-    }
-    nav { 
-      display: flex; 
-      justify-content: center; 
-      gap: 1rem;
-      margin-top: 1rem; 
+    .block {
+      background-color: rgba(23, 27, 31, 0.75); /* Semi-transparent dark blocks */
+      padding-top: 1rem;
+      padding-bottom: 1rem;
     }
     nav a {
       color: var(--primary);
@@ -38,39 +30,47 @@
       text-decoration: underline;
       color: var(--primary-hover);
     }
-    footer { 
-      text-align: center; 
-      color: var(--secondary); 
-      margin-top: 1rem;
+    .logo {
+      width: 120px; /* smaller logo */
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      font-size: 0.9rem;
+      color: var(--secondary);
     }
   </style>
 </head>
-<body>
+<body style="background-color: var(--background-color);">
 
-  <header class="container">
-    <a href="index.html"><img src="unnamed.png" alt="Keep it cool Logo" style="width: 150px;"></a>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-    </nav>
+  <header class="block">
+    <div class="container" style="text-align: center;">
+      <a href="index.html"><img src="unnamed.png" alt="Keep it cool Logo" class="logo"></a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="container">
-    <hr>
-    <section>
-      <h2>About Keep It Cool</h2>
-      <p>
-        Here, you can write a more detailed description of your company. Talk about your mission, your vision, and the values that drive your work in the AI space. Explain what makes "Keep It Cool" unique.
-      </p>
-      <p>
-        You can add more paragraphs to talk about your team, your history, or your specific approach to artificial intelligence.
-      </p>
-    </section>
+  <main class="block">
+    <div class="container">
+      <section style="padding: 2rem 0;">
+        <h2>About Keep It Cool</h2>
+        <p>
+          Here, you can write a more detailed description of your company. Talk about your mission, your vision, and the values that drive your work in the AI space. Explain what makes "Keep It Cool" unique.
+        </p>
+        <p>
+          You can add more paragraphs to talk about your team, your history, or your specific approach to artificial intelligence.
+        </p>
+      </section>
+    </div>
   </main>
   
   <footer class="container">
-    <hr>
-    <p><small>&copy; 2025 Keep It Cool. All rights reserved.</small></p>
+    <p>&copy; 2025 Keep It Cool. All rights reserved.</p>
   </footer>
 
 </body>
