@@ -6,20 +6,19 @@
   <title>Keep It Cool - AI Services</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
   <style>
-    /* Our custom styles */
+    /* Final Styles */
     body {
-      /* New greyish-black Earth background */
       background-image: url('background.jpg');
       background-size: cover;
       background-attachment: fixed;
       background-position: center;
     }
     header, main, footer {
-      background-color: rgba(23, 27, 31, 0.85); /* Semi-transparent dark background, slightly more see-through */
+      background-color: rgba(23, 27, 31, 0.85);
       border: 1px solid var(--muted-border-color);
       border-radius: 8px;
       padding: 1rem 2rem;
-      margin-bottom: 1rem; /* Reduced gap between blocks */
+      margin-bottom: 1rem;
     }
     header {
       text-align: center;
@@ -27,22 +26,21 @@
     nav { 
       display: flex; 
       justify-content: center; 
-      gap: 1rem; /* Space between buttons */
+      gap: 1rem;
       margin-top: 1rem; 
     }
-    /* This is the NEW code to paste in */
-nav a {
-  color: var(--primary); /* This is a purple color from the Pico framework */
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1rem; /* Slightly larger text */
-  padding: 5px 10px;
-  transition: all 0.2s ease-in-out;
-}
-nav a:hover {
-  text-decoration: underline;
-  color: var(--primary-hover);
-}
+    nav a {
+      color: var(--primary); /* Purple color from the framework */
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      padding: 5px 10px;
+      transition: all 0.2s ease-in-out;
+    }
+    nav a:hover {
+      text-decoration: underline;
+      color: var(--primary-hover);
+    }
     footer { 
       text-align: center; 
       color: var(--secondary); 
@@ -59,6 +57,7 @@ nav a:hover {
       <a href="about.html">About</a>
     </nav>
   </header>
+
   <main class="container">
     <hr>
     <section style="text-align: center;">
