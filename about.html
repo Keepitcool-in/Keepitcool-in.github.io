@@ -30,20 +30,19 @@
       gap: 1rem; /* Space between buttons */
       margin-top: 1rem; 
     }
-    nav a {
-      /* New red button style */
-      background-color: #c0392b;
-      color: #ffffff;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background-color 0.2s ease-in-out, transform 0.2s ease;
-    }
-    nav a:hover {
-      background-color: #a42626; /* Darker red on hover */
-      transform: translateY(-2px); /* Slight lift effect on hover */
-    }
+    /* This is the NEW code to paste in */
+nav a {
+  color: var(--primary); /* This is a purple color from the Pico framework */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem; /* Slightly larger text */
+  padding: 5px 10px;
+  transition: all 0.2s ease-in-out;
+}
+nav a:hover {
+  text-decoration: underline;
+  color: var(--primary-hover);
+}
     footer { 
       text-align: center; 
       color: var(--secondary); 
