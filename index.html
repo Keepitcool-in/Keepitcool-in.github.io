@@ -7,9 +7,44 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
   <style>
     /* Our custom styles */
-    header { text-align: center; }
-    nav { display: flex; justify-content: center; gap: 2rem; margin-top: 1rem; }
-    footer { text-align: center; color: var(--secondary); margin-top: 3rem;}
+    body {
+      background-image: url('https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?q=80&w=2071');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+    }
+    header, main, footer {
+      background-color: rgba(23, 27, 31, 0.9); /* Semi-transparent dark background */
+      border: 1px solid var(--muted-border-color);
+      border-radius: 8px;
+      padding: 1rem 2rem;
+      margin-bottom: 2rem !important; /* Add space between sections */
+    }
+    header {
+      text-align: center;
+    }
+    nav { 
+      display: flex; 
+      justify-content: center; 
+      gap: 1rem; /* Space between buttons */
+      margin-top: 1rem; 
+    }
+    nav a {
+      background-color: var(--primary);
+      color: var(--primary-inverse);
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.2s ease-in-out;
+    }
+    nav a:hover {
+      background-color: var(--primary-hover);
+    }
+    footer { 
+      text-align: center; 
+      color: var(--secondary); 
+      margin-top: 3rem;
+    }
   </style>
 </head>
 <body>
