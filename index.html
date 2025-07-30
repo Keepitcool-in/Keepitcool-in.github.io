@@ -8,17 +8,18 @@
   <style>
     /* Our custom styles */
     body {
-      background-image: url('https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?q=80&w=2071');
+      /* New greyish-black Earth background */
+      background-image: url('https://images.unsplash.com/photo-1564053489984-317bbd824344?q=80&w=2148');
       background-size: cover;
       background-attachment: fixed;
       background-position: center;
     }
     header, main, footer {
-      background-color: rgba(23, 27, 31, 0.9); /* Semi-transparent dark background */
+      background-color: rgba(23, 27, 31, 0.85); /* Semi-transparent dark background, slightly more see-through */
       border: 1px solid var(--muted-border-color);
       border-radius: 8px;
       padding: 1rem 2rem;
-      margin-bottom: 2rem !important; /* Add space between sections */
+      margin-bottom: 1rem; /* Reduced gap between blocks */
     }
     header {
       text-align: center;
@@ -30,20 +31,23 @@
       margin-top: 1rem; 
     }
     nav a {
-      background-color: var(--primary);
-      color: var(--primary-inverse);
+      /* New red button style */
+      background-color: #c0392b;
+      color: #ffffff;
       padding: 10px 20px;
       border-radius: 5px;
       text-decoration: none;
-      transition: background-color 0.2s ease-in-out;
+      font-weight: bold;
+      transition: background-color 0.2s ease-in-out, transform 0.2s ease;
     }
     nav a:hover {
-      background-color: var(--primary-hover);
+      background-color: #a42626; /* Darker red on hover */
+      transform: translateY(-2px); /* Slight lift effect on hover */
     }
     footer { 
       text-align: center; 
       color: var(--secondary); 
-      margin-top: 3rem;
+      margin-top: 1rem;
     }
   </style>
 </head>
