@@ -60,7 +60,8 @@
       <a href="index.html"><img src="unnamed.png" alt="Keep it cool Logo" class="logo"></a>
       <nav>
         <a href="index.html">Home</a>
-        <a href="about.html">About</a>
+        <!-- Added onclick event for tracking About Us clicks -->
+        <a href="about.html" onclick="gtag('event', 'about_us_clicked', { 'event_category': 'navigation', 'event_label': 'About Us Link Click' });">About</a>
       </nav>
     </div>
   </header>
