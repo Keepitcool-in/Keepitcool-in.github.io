@@ -1,124 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) - Google Analytics 4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-J5091F2ZHL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <!-- Google tag (gtag.js) - Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J5091F2ZHL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-    gtag('config', 'G-J5091F2ZHL');
-  </script>
-  
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Keep It Cool - AI Services</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
-  <style>
-    /* Final Styles for Full-Width Design */
-    :root {
-      --background-color: #483D8B; /* New Darker Purple */
-    }
-    body {
-      color: var(--pico-color, #d9d9d9);
-    }
-    .block {
-      background-color: rgba(23, 27, 31, 0.75); /* Semi-transparent dark blocks */
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-    }
-    nav a {
-      color: var(--primary);
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.1rem;
-      padding: 5px 10px;
-      transition: all 0.2s ease-in-out;
-    }
-    nav a:hover {
-      text-decoration: underline;
-      color: var(--primary-hover);
-    }
-    .logo {
-      width: 120px; /* smaller logo */
-      margin-bottom: 0.5rem;
-    }
-    footer {
-      text-align: center;
-      padding-top: 2rem;
-      padding-bottom: 2rem;
-      font-size: 0.9rem;
-      color: var(--secondary);
-    }
-    /* Fix for the Trustpilot widget blocking clicks */
-    .trustpilot-container {
-      position: relative;
-      z-index: 1; /* Ensures the widget is in the correct layer */
-      overflow: hidden; /* Prevents overflow that might cause click issues */
-    }
-  </style>
-  
-  <!-- TrustBox script - Add this to the head of your website -->
-  <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+        gtag('config', 'G-J5091F2ZHL');
+    </script>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon link added below. Make sure to place your favicon.ico file
+         in the root directory of your website. -->
+    <link rel="icon" type="image/x-icon" href="/logo.ico">
+    <title>Keep It Cool - AI Services</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        /* Final Styles for Full-Width Design */
+        :root {
+            --background-color: #483D8B; /* New Darker Purple */
+        }
+        body {
+            color: var(--pico-color, #d9d9d9);
+        }
+        .block {
+            background-color: rgba(23, 27, 31, 0.75); /* Semi-transparent dark blocks */
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 5px 10px;
+            transition: all 0.2s ease-in-out;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: var(--primary-hover);
+        }
+        .logo {
+            width: 120px; /* smaller logo */
+            margin-bottom: 0.5rem;
+        }
+        footer {
+            text-align: center;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            font-size: 0.9rem;
+            color: var(--secondary);
+        }
+        /* Fix for the Trustpilot widget blocking clicks */
+        .trustpilot-container {
+            position: relative;
+            z-index: 1; /* Ensures the widget is in the correct layer */
+            overflow: hidden; /* Prevents overflow that might cause click issues */
+        }
+    </style>
+    
+    <!-- TrustBox script - Add this to the head of your website -->
+    <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
 </head>
 <body style="background-color: var(--background-color);">
 
-  <header class="block">
-    <div class="container" style="text-align: center;">
-      <a href="index.html"><img src="unnamed.png" alt="Keep it cool Logo" class="logo"></a>
-      <nav>
-        <a href="index.html">Home</a>
-        <!-- Added onclick event for tracking About Us clicks -->
-        <a href="about.html" onclick="gtag('event', 'about_us_clicked', { 'event_category': 'navigation', 'event_label': 'About Us Link Click' });">About</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="block">
-    <div class="container">
-      <section style="text-align: center; padding: 2rem 0;">
-        <h1>Keep It Cool</h1>
-        <p>Let's keep calm and make AI cool to use.</p>
-      </section>
-      
-      <section>
-        <h2 style="text-align: center;">Our AI-Powered Solutions</h2>
-        <div class="grid">
-          <article>
-            <h3>Feature One</h3>
-            <p>Describe your first amazing AI feature here. Explain how it helps your clients and why it's a game-changer.</p>
-          </article>
-          <article>
-            <h3>Feature Two</h3>
-            <p>Describe your second innovative AI service. What problem does it solve for your customers?</p>
-          </article>
-          <article>
-            <h3>Feature Three</h3>
-            <p>Describe your third key offering. This is where you can highlight the unique technology you use.</p>
-          </article>
+    <header class="block">
+        <div class="container" style="text-align: center;">
+            <a href="index.html"><img src="unnamed.png" alt="Keep it cool Logo" class="logo"></a>
+            <nav>
+                <a href="index.html">Home</a>
+                <!-- Added onclick event for tracking About Us clicks -->
+                <a href="about.html" onclick="gtag('event', 'about_us_clicked', { 'event_category': 'navigation', 'event_label': 'About Us Link Click' });">About</a>
+            </nav>
         </div>
-      </section>
+    </header>
 
-      <!-- TrustBox widget container with fixed dimensions to prevent overlay issues -->
-      <section style="text-align: center; padding: 2rem 0;">
-        <h2 style="text-align: center;">What Our Clients Say</h2>
-        <div class="trustpilot-container">
-          <div class="trustpilot-widget" data-locale="en-US" data-template-id="56278ab9fbba0b000d56b00c" data-businessunit-id="660803f21aab5607fe40ee0f" data-style-width="100%" data-style-height="52px" data-theme="dark" data-font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'" data-tags="reviews" data-schema-type="WebPage">
-          </div>
-          <!-- A separate link outside the widget div to ensure it is clickable -->
-          <p>
-            <a href="https://www.trustpilot.com/review/keepitcool.in" target="_blank" rel="noopener">See our reviews on Trustpilot</a>
-          </p>
+    <main class="block">
+        <div class="container">
+            <section style="text-align: center; padding: 2rem 0;">
+                <h1>Keep It Cool</h1>
+                <p>Let's keep calm and make AI cool to use.</p>
+            </section>
+            
+            <section>
+                <h2 style="text-align: center;">Our AI-Powered Solutions</h2>
+                <div class="grid">
+                    <article>
+                        <h3>Feature One</h3>
+                        <p>Describe your first amazing AI feature here. Explain how it helps your clients and why it's a game-changer.</p>
+                    </article>
+                    <article>
+                        <h3>Feature Two</h3>
+                        <p>Describe your second innovative AI service. What problem does it solve for your customers?</p>
+                    </article>
+                    <article>
+                        <h3>Feature Three</h3>
+                        <p>Describe your third key offering. This is where you can highlight the unique technology you use.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- TrustBox widget container with fixed dimensions to prevent overlay issues -->
+            <section style="text-align: center; padding: 2rem 0;">
+                <h2 style="text-align: center;">What Our Clients Say</h2>
+                <div class="trustpilot-container">
+                    <div class="trustpilot-widget" data-locale="en-US" data-template-id="56278ab9fbba0b000d56b00c" data-businessunit-id="660803f21aab5607fe40ee0f" data-style-width="100%" data-style-height="52px" data-theme="dark" data-font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'" data-tags="reviews" data-schema-type="WebPage">
+                    </div>
+                    <!-- A separate link outside the widget div to ensure it is clickable -->
+                    <p>
+                        <a href="https://www.trustpilot.com/review/keepitcool.in" target="_blank" rel="noopener">See our reviews on Trustpilot</a>
+                    </p>
+                </div>
+            </section>
+            
         </div>
-      </section>
-      
-    </div>
-  </main>
-  
-  <footer class="container">
-    <p>&copy; 2025 Keep It Cool. All rights reserved.</p>
-  </footer>
+    </main>
+    
+    <footer class="container">
+        <p>&copy; 2025 Keep It Cool. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
